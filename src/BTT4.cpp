@@ -23,7 +23,8 @@
  }
  
  nhap(){
- 	printf("moi nhap chieu cao \n");
+ 	printf("BTT1_4\n");
+ 	printf("moi nhap chieu cao cua hinh tam giac \n");
     int ChieuCao;
 	scanf("%d", & ChieuCao);
 	printf("chieu cao ban nhap la %d\n",ChieuCao);

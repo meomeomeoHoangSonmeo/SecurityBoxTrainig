@@ -3,24 +3,26 @@
 #include <string.h>
 void tinhtoantien(int SoDuongDi){
 	int TongTien;
-	printf("ham tinhtoantien %d\n " , SoDuongDi);
+	printf("ham tinh toan tien %d\n" , SoDuongDi);
 
-	if(0<SoDuongDi && SoDuongDi<=1000 ){
+	if(0<=SoDuongDi && SoDuongDi<=1000 ){
+		printf("meo1");
 		TongTien=10000;
 	}
-	
-	if(SoDuongDi=30000){
-		TongTien=227500;
-	}
-	if(1000<SoDuongDi && SoDuongDi<=30000){
+		if(1000<SoDuongDi && SoDuongDi<=30000){
+			printf("meo2");
 		TongTien= 10000+ (1500/200)*(SoDuongDi-1000);
-	}
+	} 
+	
+
+
 	if(SoDuongDi> 30000){
+			printf("meo4");
 			TongTien=227500+ (8000/1000)*(SoDuongDi-30000);
 		
 	}
 	
-	printf("TongTien la %d" , TongTien);
+	printf("Tong Tien la: %d" , TongTien);
 	
 }
 nhapsoduong(){
@@ -33,5 +35,6 @@ nhapsoduong(){
 }
 
  main(){
+ 	printf("BTT1_3\n");
 	nhapsoduong();
 }

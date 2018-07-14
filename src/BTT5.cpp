@@ -92,7 +92,7 @@ printf("You input Day: %d, Month: %d, Year: %d", Day, Month,Year);
 Cacular(Day, Month, Year);
 }
 main(){
-	
+	printf("BTT1_5: xet nam nhuan :))\n");
 	Input();
 }
 

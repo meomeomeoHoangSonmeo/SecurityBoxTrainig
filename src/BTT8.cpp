@@ -9,7 +9,7 @@
 
 
 main(){
-	
+	printf("BTT1_8: BT DAO XAU \n");
 	char String[1000];
 	gets(String);
 	

@@ -9,7 +9,7 @@
         mang[n] = InputNumber%10;
         InputNumber = InputNumber/10;
         printf("cac chu so trong day la: %d \n",  mang[n] );
-        printf(" so sau khi chia vua nhap: %d \n" ,InputNumber);
+        printf("so sau khi chia vua nhap: %d \n" ,InputNumber);
     }
     printf("cac gia tri trong mang  %d %d %d \n " ,mang[0], mang[1] , mang[2]);
   /*	for(int i=0; i<2; i++){
@@ -39,7 +39,7 @@
 int bt1() {
 
    int InputNumber;
-   printf("moi nhap so: ");
+   printf("moi nhap so co 3 chu so: ");
    scanf("%d",&InputNumber);
    if(99< InputNumber && InputNumber <1000){
         printf("vua nhap: %d \n" ,InputNumber);
@@ -53,6 +53,7 @@ int bt1() {
 
 
 main(){
+	printf("BTT1_1 \n");
         bt1();
 
 

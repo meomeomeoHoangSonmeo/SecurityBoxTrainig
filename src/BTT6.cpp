@@ -91,7 +91,8 @@ Input(){
 }
 
 main(){
-	char h=',';
-	printf("%d", h);
+	printf("BTT1_6: CHUAN HOA CHUOI -.-\n");
+
+
 	Input();
 }

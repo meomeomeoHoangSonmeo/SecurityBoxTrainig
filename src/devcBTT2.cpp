@@ -2,26 +2,28 @@
 #include <stdlib.h>
 #include <string.h>
     main(){
+    	printf("BTT1_2\n");
 	int a=0, b=0;
-	char s[255];
-	gets(s);
+	char String[255];
+	printf("nhap chuoi ban muon xet: ");
+	gets(String);
 	
 
-printf("%d", a);
-	int n=strlen(s);
+
+	int n=strlen(String);
 	for(int i=0;i<n;i++){
 	
-		if('a' <=s[i]&& s[i]<='z'){
+		if('a' <=String[i]&& String[i]<='z'){
 		
 		  a++;
 		}
-		if('A'<=s[i]&& s[i]<='Z'){
+		if('A'<=String[i]&& String[i]<='Z'){
 			b++;
 		}
 		
 		
 	}
 	printf("viet thuong %d " , a);
-	printf("viet thuong %d ", b);
+	printf("viet hoa %d ", b);
 	
 }
