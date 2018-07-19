@@ -3,7 +3,7 @@
 /* Vi?t chuong trình in ra màn hình
  tam giác cân d?c có d? cao h (h nh?p t? bàn phím). */
  
- TinhToan(int ChieuCao){
+ void TinhToan(int ChieuCao){
  	int Dong;
  	int SoCach;
  	int SoSao;
@@ -22,7 +22,7 @@
    }
  }
  
- nhap(){
+ void nhap(){
  	printf("BTT1_4\n");
  	printf("moi nhap chieu cao cua hinh tam giac \n");
     int ChieuCao;
@@ -34,7 +34,7 @@
 
  }
  
- main(){
+int main(){
  	nhap();
- 	
+ 	return 0;
  }

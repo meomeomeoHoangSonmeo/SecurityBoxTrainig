@@ -41,7 +41,7 @@ printf("BCNN: %d",Max );
 }
 
 main(){
-	printf("BTT1_7: TIM UCLN AND BCNN \n");
+	printf("BTT1_7: Find UCLN AND BCNN \n");
 	int Number1;
 	int Number2;
 	printf("Input NUMBER 1 \n ");

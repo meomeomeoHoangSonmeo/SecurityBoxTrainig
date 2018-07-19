@@ -7,14 +7,14 @@ cho bi?t nam dó có ph?i nam nhu?n hay không?
 #include<stdio.h>
 #include<math.h>
 Cacular(int Day, int Month, int Year){
-	int NamNhuan;
+	int LeapYear;
 		if (Year%4==0 && Year%100!=0 || Year%400==0)
 		{
-			NamNhuan =1;
+			LeapYear =1;
 		}
 		else
 		{
-			NamNhuan=0;
+			LeapYear=0;
 		}
 	
     int CheckMonth=0;
@@ -43,14 +43,14 @@ Cacular(int Day, int Month, int Year){
 	
 	
 	if(Month==2){
-	     	if(Day<=29 && NamNhuan==1){
+	     	if(Day<=29 && LeapYear==1){
 	     		CheckMonth =1;
 			 }
-			 if(Day <=28 && NamNhuan==0){
+			 if(Day <=28 && LeapYear==0){
 			 	CheckMonth=1;
 			 }
 		
-		if((Day>29 )&&( NamNhuan==1||NamNhuan==0)){
+		if((Day>29 )&&( LeapYear==1||LeapYear==0)){
 	
 		CheckMonth=0;
 	    }
@@ -65,11 +65,11 @@ Cacular(int Day, int Month, int Year){
 		
 		
 		
-		if(CheckMonth ==1 && NamNhuan == 1){
-			printf("nam nhuan nhe \n");
+		if(CheckMonth ==1 &&LeapYear == 1){
+			printf("LeapYear \n");
 		}
-		if(CheckMonth ==1 && NamNhuan==0){
-			printf("ko phai nam nhuan nhe \n");
+		if(CheckMonth ==1 && LeapYear==0){
+			printf("NO LeapYear \n");
 		}
 		
 	

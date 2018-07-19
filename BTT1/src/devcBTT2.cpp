@@ -5,7 +5,7 @@
     	printf("BTT1_2\n");
 	int a=0, b=0;
 	char String[255];
-	printf("nhap chuoi ban muon xet: ");
+	printf("Input the String that you want to process: ");
 	gets(String);
 	
 
@@ -23,7 +23,7 @@
 		
 		
 	}
-	printf("viet thuong %d " , a);
-	printf("viet hoa %d ", b);
+	printf("lowercase %d " , a);
+	printf("uppercase %d ", b);
 	
 }

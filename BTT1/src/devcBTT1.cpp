@@ -3,15 +3,15 @@
  void tachso(int InputNumber){
 
     
-    int mang[3];
+    int Array[3];
 	int temp;
     for(int n=0 ; n <3; n++){
-        mang[n] = InputNumber%10;
+       Array[n] = InputNumber%10;
         InputNumber = InputNumber/10;
-        printf("cac chu so trong day la: %d \n",  mang[n] );
-        printf("so sau khi chia vua nhap: %d \n" ,InputNumber);
+        printf("Numbers in array: %d \n",  Array[n] );
+        printf("The number is divided: %d \n" ,InputNumber);
     }
-    printf("cac gia tri trong mang  %d %d %d \n " ,mang[0], mang[1] , mang[2]);
+    printf("value in array  %d %d %d \n " ,Array[0], Array[1] , Array[2]);
   /*	for(int i=0; i<2; i++){
      for(int j=i+1; j<3; j++){
          if(mang[j]<mang[i]){
@@ -24,29 +24,29 @@
   // dung de sap xep (thuat toan noi bot)
   	for(int i=0; i<2; i++){
     	for(int j=0; j<2; j++){
-        	if(mang[j]>mang[j+1]){
-            temp = mang[j];
-            mang [j] = mang[j+1];
-            mang[j+1] = temp;
+        	if(Array[j]>Array[j+1]){
+            temp = Array[j];
+            Array [j] = Array[j+1];
+            Array[j+1] = temp;
           	}
        	}   
    	}
   	for (int k =2; k>=0; k--){
-   		printf("%d ",mang[k]);
+   		printf("%d ",Array[k]);
 	   }
 }
 
 int bt1() {
 
    int InputNumber;
-   printf("moi nhap so co 3 chu so: ");
+   printf("Input the mumber that has 3 number: ");
    scanf("%d",&InputNumber);
    if(99< InputNumber && InputNumber <1000){
-        printf("vua nhap: %d \n" ,InputNumber);
+        printf("You Input: %d \n" ,InputNumber);
         tachso(InputNumber);
    }
    else
-     printf("chi nhap so co 3 chu so");
+     printf("Input the mumber that has 3 numbe only!!!!1 ");
    return 0;
    }
 
