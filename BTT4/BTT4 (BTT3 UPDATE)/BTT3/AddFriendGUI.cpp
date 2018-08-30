@@ -13,8 +13,6 @@ void AddFriendGUI::InputFriendUserName(string userID)
 AddFriendGUI::AddFriendGUI()
 {
 }
-
-
 AddFriendGUI::~AddFriendGUI()
 {
 }

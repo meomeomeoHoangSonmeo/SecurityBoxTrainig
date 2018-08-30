@@ -22,6 +22,7 @@ void menu::Displaymenu()
 		std::cout << "moi ban nhap passWord: \n";
 		std::cin >> passWord;
 		if (LogInGUIMenu1.InputUserNameandPassword(userName, passWord) != "NOTHING") {
+
 			process(LogInGUIMenu1.InputUserNameandPassword(userName, passWord));
 		}
 		else {
@@ -42,6 +43,8 @@ void menu::Displaymenu()
 	}
 }
 
+
+
 void menu::process(string userID)
 {
 
@@ -53,71 +56,141 @@ void menu::process(string userID)
 	DisplayFriendListGUI DisplayFriendListGUIMenu1;
 	BlockFriendGUI BlockFriendGUIMenu1;
 	SeenMessGUI SeenMessGUIMenu1;
-	int b;
+	int b=0;
 	int n;
+//	char key = getch();
+//	int value = key;
 	do {
-		cout << "your ID: " << userID << endl;
-		cout << "please, choose: " << endl;
-		cout << "press ctr+B to back view" << endl;
-		cout << "press ctr+N to continue" << endl;
-		cout << "0: exit" << endl;
-		cout << "1: RequestDislayMesswithFriendGUI" << endl;
-		cout << "2: DisplayDetailMessGUI" << endl;
-		cout << "3: SentMessGUI" << endl;
-		cout << "4: AddFriendGUI" << endl;
-		cout << "5: DisplayFriendListGUI" << endl;
-		cout << "6: BlockFriendGUI" << endl;
-		cout << "7: see seen?" << endl;
-		cout << "8: LogOut" << endl;
-		char key = getch();
-		int value = key;
-		if (value == 14 || value != 2) {
+	
+/*		{
+		case 2: {
+			n = b;
+			switch (n)
+			{
+			case 0: {
+				exit(0);
+			}
+			case 1: {
+				RequestDislayMesswithFriendGUIMenu1.RequestDislayMesswithFriend(userID);
+				break;
+			}
+			case 2: {
+				DisplayDetailMessGUIMenu1.RequestDisplay(userID);
+				break;
+			}
+			case 3: {
+				SentMessGUIMenu1.RequestSentMess(userID);
+				break;
+			}
+			case 4: {
+				AddFriendGUIMenu1.InputFriendUserName(userID);
+				break;
+			}
+			case 5: {
+				DisplayFriendListGUIMenu1.RequestFriendList(userID);
+				break;
+			}
+			case 6: {
+				BlockFriendGUIMenu1.RequestBlockFriendGUI(userID);
+				break;
+			}
+			case 7: {
+				SeenMessGUIMenu1.RequestViewMess(userID);
+				break;
+			}
+			case 8: {
+				LogOutGUIMenu1.RequestLogOut(userID);
+				break;
+			}
+			}
+
+
+		}
+		case 14: {*/
+			cout << "your ID: " << userID << endl;
+			cout << "please, choose: " << endl;
+			cout << "press ctr+B to back view" << endl;
+			cout << "press ctr+N to continue" << endl;
+			cout << "0: exit" << endl;
+			cout << "1: RequestDislayMesswithFriendGUI" << endl;
+			cout << "2: DisplayDetailMessGUI" << endl;
+			cout << "3: SentMessGUI" << endl;
+			cout << "4: AddFriendGUI" << endl;
+			cout << "5: DisplayFriendListGUI" << endl;
+			cout << "6: BlockFriendGUI" << endl;
+			cout << "7: see seen?" << endl;
+			cout << "8: LogOut" << endl;
+			//  char key = getch();
+			//	int value = key;
+			//	if (value == 14 || value != 2) {
 			cin >> n;
 			b = n;
 
-		}
-		if (value == 2) {
-			n = b;
-		}
-		switch (n)
+			switch (n)
+			{
+			case 0: {
+				exit(0);
+			}
+			case 1: {
+				RequestDislayMesswithFriendGUIMenu1.RequestDislayMesswithFriend(userID);
+				break;
+			}
+			case 2: {
+				DisplayDetailMessGUIMenu1.RequestDisplay(userID);
+				break;
+			}
+			case 3: {
+				SentMessGUIMenu1.RequestSentMess(userID);
+				break;
+			}
+			case 4: {
+				AddFriendGUIMenu1.InputFriendUserName(userID);
+				break;
+			}
+			case 5: {
+				DisplayFriendListGUIMenu1.RequestFriendList(userID);
+				break;
+			}
+			case 6: {
+				BlockFriendGUIMenu1.RequestBlockFriendGUI(userID);
+				break;
+			}
+			case 7: {
+				SeenMessGUIMenu1.RequestViewMess(userID);
+				break;
+			}
+			case 8: {
+				LogOutGUIMenu1.RequestLogOut(userID);
+				break;
+			}
+			}
+		//}
+	//	}
+	} while (n>0|| n<8);
+
+}
+
+void menu::Choose(string userID)
+{
+	int b;
+	char key = getch();
+	int value = key;
+	do {
+		switch (value)
 		{
-		case 0: {
-			exit(0);
-		}
-		case 1: {
-			RequestDislayMesswithFriendGUIMenu1.RequestDislayMesswithFriend(userID);
-			break;
-		}
+
+
 		case 2: {
-			DisplayDetailMessGUIMenu1.RequestDisplay(userID);
-			break;
+
 		}
-		case 3: {
-			SentMessGUIMenu1.RequestSentMess(userID);
-			break;
-		}
-		case 4: {
-			AddFriendGUIMenu1.InputFriendUserName(userID);
-			break;
-		}
-		case 5: {
-			DisplayFriendListGUIMenu1.RequestFriendList(userID);
-			break;
-		}
-		case 6: {
-			BlockFriendGUIMenu1.RequestBlockFriendGUI(userID);
-			break;
-		}
-		case 7: {
-			SeenMessGUIMenu1.RequestViewMess(userID);
-			break;
-		}
-		case 8: {
-			LogOutGUIMenu1.RequestLogOut(userID);
-			break;
+
+		case 14: {
+
 		}
 		}
-	} while (n > 0 || n < 9);
+	} while (value != 2 || value != 14);
+
+
 
 }
 

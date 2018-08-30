@@ -18,6 +18,7 @@ class menu
 public:
 	void Displaymenu();
 	void process(string userID);
+	void Choose(string userID);
 	menu();
 	~menu();
 };
